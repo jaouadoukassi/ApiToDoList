@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiToDoList.Migrations
 {
     [DbContext(typeof(ClsTodoList))]
-    [Migration("20221029033032_Tareas Table")]
+    [Migration("20221030220040_Tareas Table")]
     partial class TareasTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

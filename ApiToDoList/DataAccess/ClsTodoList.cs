@@ -9,7 +9,7 @@ namespace ApiToDoList.DataAccess
         {
 
         }
-        public DbSet<ClsBaseEntity>? TasksTable { get; set; }
+        public DbSet<ClsBaseEntity> TasksTable { get; set; }
         
     }
 }

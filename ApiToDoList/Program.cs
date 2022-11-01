@@ -9,8 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 const string CONNECTIONNAMES = "ConnectiDefault";
 var connectionString = builder.Configuration.GetConnectionString(CONNECTIONNAMES);
 
-// 3. Add Context
+// 3. Add Context For SQL Server
 builder.Services.AddDbContext<ClsTodoList>(options => options.UseSqlServer(connectionString));
+
+//// 4. Add Context For MySql Workbench
+//builder.Services.AddSingleton(connectionString);
+
 
 // Add services to the container.
 
